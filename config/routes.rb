@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   # http verb, url, endpoint, rails command(optional)
   # get 'people/new', to: 'people#index'
   # post etc.
-  root 'subs#index'
+  root 'subs#index' # goes into controller of subs/index
 
   # bad example
   # resources :subs do #faster creating routes
