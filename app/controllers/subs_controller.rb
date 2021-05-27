@@ -142,6 +142,10 @@ class SubsController < ApplicationController
   end
     
   private
+  # { sub: { title: 'title'}}
+  # { sub: { title: ''}}
+  # { sub: { title: '', age: 23, address: 'ajdfl'}}
+  # { sub: { title: 'SELECT*FROMUSERs', SELECT*FROMUSERs}}
   def sub_params
     params.require(:sub).permit(:title) 
   end
